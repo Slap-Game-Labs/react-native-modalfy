@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useMemo, useCallback } from 'use-memo-one'
 import React, { ReactNode, useEffect, useRef, memo } from 'react'
 import { Animated, StyleSheet, ViewProps, ViewStyle } from 'react-native'

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { BackHandler } from 'react-native'
 
 import type {

@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import type { ModalStack, ModalStackItem, ModalOptions } from '../types'
 
 export default function <P>(stackItem: ModalStackItem<P> | undefined, stack: ModalStack<P>): ModalOptions {

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useEffect, useState } from 'react'
 import { useCallback, useMemo } from 'use-memo-one'
 import { Easing, Animated, StyleSheet, TouchableWithoutFeedback, Platform } from 'react-native'

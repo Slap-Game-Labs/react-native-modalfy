@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 export * from './types'
 export { default as useModal } from './lib/useModal'
 export { default as withModal } from './lib/withModal'

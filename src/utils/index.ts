@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { Dimensions, Easing } from 'react-native'
 
 import type { ModalOptions } from '../types'

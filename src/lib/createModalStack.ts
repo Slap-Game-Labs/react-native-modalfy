@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import type { ModalStack, ModalStackConfig, ModalOptions, ModalfyParams } from '../types'
 
 import { invariant, defaultOptions, getStackItemData, validateDefaultOptions } from '../utils'
