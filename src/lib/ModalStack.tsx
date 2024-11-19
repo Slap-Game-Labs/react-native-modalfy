@@ -47,7 +47,7 @@ const ModalStack = <P extends ModalfyParams>(props: Props<P>) => {
       }).start(() => {
         setStackStatus('hidden')
         setBackdropClosedItems([])
-        translateY.setValue(sh(100))
+        // translateY.setValue(sh(100))
       })
     }
   }, [backdropAnimationDuration, opacity, translateY, stackStatus])

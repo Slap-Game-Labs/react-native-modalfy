@@ -2,9 +2,9 @@
   "name": "react-native-modalfy",
   "version": "3.5.5",
   "description": "Modal citizen of React Native",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/src/index.d.ts",
+  "main": "src/index",
+  "module": "src/index",
+  "types": "src/index",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
@@ -15,13 +15,7 @@
   "scripts": {
     "test": "jest --updateSnapshot --verbose",
     "type": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\" --fix",
-    "pre-commit": "yarn lint && yarn type && yarn test",
-    "prepare": "bob build && husky install",
-    "release": "release-it",
-    "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --fix"
   },
   "keywords": [
     "react",
@@ -33,19 +27,12 @@
     "ios",
     "android"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/colorfy-software/react-native-modalfy.git"
-  },
   "author": "Charles Mangwa <charles.m@hey.com> (https://github.com/CharlesMangwa)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/colorfy-software/react-native-modalfy/issues"
   },
   "homepage": "https://colorfy-software.gitbook.io/react-native-modalfy",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "dependencies": {
     "hoist-non-react-statics": "^3.3.2",
     "react-is": "^17.0.2",
@@ -79,33 +66,10 @@
     "react-native": ">=0.59.0",
     "react-native-gesture-handler": ">=1.9.0"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn pre-commit"
-    }
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
   },
   "eslintConfig": {
     "extends": "@colorfy-software",
@@ -127,19 +91,5 @@
     "arrowParens": "avoid",
     "trailingComma": "all",
     "useTabs": false
-  },
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
-    ]
   }
 }
